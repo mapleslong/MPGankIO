@@ -7,6 +7,8 @@
 
 ---
 
+# 详细解读可以进入我的[博客](http://www.mapleslong.com)或者[简书](http://www.jianshu.com/users/0da7bdbfddb2)
+
 第一次写文章，希望大家轻喷哈~~！！
 
 ### APP框架搭建：
@@ -70,9 +72,6 @@
 
 #这样一来MVP基本的架构就搭好啦！
 
-有问题可以来我[博客](http://www.mapleslong.com)或者[简书](http://www.jianshu.com)反馈
-
-至于BaseModel是为了复用和方便创建的此App暂时没有用到
-如果有发现可以继承BaseModel
+有问题可以来我[博客](http://www.mapleslong.com)或者[简书](http://www.jianshu.com/users/0da7bdbfddb2)反馈,谢谢大家的停留在这里时间
  
- [源码下载](https://github.com/mapleslong/MPGankIO)
+ [附上源码下载地址](https://github.com/mapleslong/MPGankIO) 
