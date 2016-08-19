@@ -10,4 +10,6 @@
     <item name="rv_list" type="id"/>
     <item name="tv_publishtime" type="id"/>
     <item name="tv_name" type="id"/>
+    <item name="img_pic" type="id"/>
+    <item name="webview" type="id"/>
 </resources>

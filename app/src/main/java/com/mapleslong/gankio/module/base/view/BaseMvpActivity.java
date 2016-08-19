@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.mapleslong.gankio.module.base.presenter.BasePresenter;
+import com.mapleslong.gankio.utils.HUDUtil;
+import com.mapleslong.gankio.utils.ToastUtil;
 
 /**
  * Created by Mapleslong on 16/8/17.
@@ -17,6 +19,7 @@ public abstract class BaseMvpActivity<V extends BaseView, P extends BasePresente
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         presenter = initPresenter();
+        presenter.attach((V) this);
     }
 
     ///================等待实现的方法集合==========================
@@ -31,21 +34,27 @@ public abstract class BaseMvpActivity<V extends BaseView, P extends BasePresente
 
     @Override
     public void showLoading() {
-
+        HUDUtil.showLoading(this);
     }
 
     @Override
     public void hideLoading() {
-
+        HUDUtil.hideLoading();
     }
 
     @Override
     public void showToast(String msg) {
-
+        ToastUtil.show(this, msg);
     }
 
     @Override
     public void showMessage(String msg, int duration) {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        presenter.dettach();
+        super.onDestroy();
     }
 }

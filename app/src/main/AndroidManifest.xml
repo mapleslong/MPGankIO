@@ -3,6 +3,7 @@
           package="com.mapleslong.gankio">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".GankApplication"
         android:allowBackup="true"
@@ -10,12 +11,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".module.main.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".module.html5.Html5Activity">
         </activity>
     </application>
 

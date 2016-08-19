@@ -129,7 +129,7 @@ public class TypeFragment extends BaseMvpFragment<TypeFragmentView, TypePresente
     @Override
     public void notifyAdapter() {
         if (mGankTypeCardAdapter == null) {
-            mGankTypeCardAdapter = new GankTypeCardAdapter(mDatas);
+            mGankTypeCardAdapter = new GankTypeCardAdapter(mActivity, mDatas);
             rvList.setLayoutManager(new LinearLayoutManager(mActivity));
             rvList.setAdapter(mGankTypeCardAdapter);
         }

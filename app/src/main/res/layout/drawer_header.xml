@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="\n\n\n主要功能大致已经做完了\n\n\n有问题联系我可以去\n\n\n简书:http://www.jianshu.com/users/0da7bdbfddb2/latest_articles \n\n\n博客:http://www.mapleslong.com"/>
 
 </LinearLayout>

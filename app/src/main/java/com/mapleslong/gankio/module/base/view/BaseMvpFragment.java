@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.mapleslong.gankio.module.base.presenter.BasePresenter;
+import com.mapleslong.gankio.utils.HUDUtil;
+import com.mapleslong.gankio.utils.ToastUtil;
 
 /**
  * Created by Mapleslong on 16/8/18.
@@ -50,17 +52,17 @@ public abstract class BaseMvpFragment<V extends BaseView, P extends BasePresente
 
     @Override
     public void showLoading() {
-
+        HUDUtil.showLoading(mActivity);
     }
 
     @Override
     public void hideLoading() {
-
+        HUDUtil.hideLoading();
     }
 
     @Override
     public void showToast(String msg) {
-
+        ToastUtil.show(mActivity, msg);
     }
 
     @Override

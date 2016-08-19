@@ -40,10 +40,11 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.1.0'
     ////////////////////第三方组件/////////////////////
     compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.mapleslong.widget:MPProgressHUD:1.0.0'
     /////////////////////内存泄露检测//////////////////
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
-
 
 }

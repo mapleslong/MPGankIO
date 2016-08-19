@@ -4,6 +4,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="5dp"
+                                    android:foreground="?android:attr/selectableItemBackground"
                                     android:orientation="vertical"
                                     app:contentPadding="5dp">
 
@@ -16,8 +17,10 @@
             style="@style/txt_normal_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tv_publishtime"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
             android:gravity="start"
+            android:maxLines="3"
             android:text="标题"
             android:textSize="16sp"
             />
@@ -28,17 +31,25 @@
             style="@style/txt_normal_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="作者"/>
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:text="作者"
+            android:textColor="@color/colorPrimary"/>
 
         <TextView
             android:id="@id/tv_publishtime"
             style="@style/txt_normal_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@id/tv_name"
-            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
             android:text="发表时间"/>
+
     </RelativeLayout>
+
 </android.support.v7.widget.CardView>
