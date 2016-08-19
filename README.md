@@ -6,6 +6,9 @@
 
 
 ---
+> 福利妹子图本来是打算用PhotoView+Glide 做的不过还有带你事等下次有空的时候再去完善一些东西吧！
+
+![效果图](http://o6kv2wscf.bkt.clouddn.com/16-8-19/6786155.gif?attname=)
 
 # 详细解读可以进入我的[博客](http://www.mapleslong.com)或者[简书](http://www.jianshu.com/users/0da7bdbfddb2)
 
