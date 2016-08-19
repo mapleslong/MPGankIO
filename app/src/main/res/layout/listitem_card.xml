@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical"
+                                    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@id/tv_title"
+            style="@style/txt_normal_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_publishtime"
+            android:gravity="start"
+            android:text="标题"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/txt_normal_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="作者"/>
+
+        <TextView
+            android:id="@id/tv_publishtime"
+            style="@style/txt_normal_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="5dp"
+            android:text="发表时间"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

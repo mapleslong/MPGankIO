@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id"/>
+    <item name="tablayout" type="id"/>
+    <item name="vp_pager" type="id"/>
+    <item name="drawer_layout" type="id"/>
+    <item name="fl_content" type="id"/>
+    <item name="navigation_view" type="id"/>
+    <item name="tv_title" type="id"/>
+    <item name="rv_list" type="id"/>
+    <item name="tv_publishtime" type="id"/>
+    <item name="tv_name" type="id"/>
+</resources>

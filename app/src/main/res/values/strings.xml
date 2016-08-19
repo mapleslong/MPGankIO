@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">GankIO</string>
+
+
+    <!--类型-->
+    <string name="type_all">all</string>
+    <string name="type_Android">Android</string>
+    <string name="type_iOS">iOS</string>
+    <string name="type_video">休息视频 </string>
+    <string name="type_fuli">福利</string>
+    <string name="type_extres">拓展资源</string>
+    <string name="type_web">前端</string>
+    <string name="type_advice">瞎推荐</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
