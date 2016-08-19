@@ -20,6 +20,7 @@ public class NetworkApiClient {
     private static ApiService mApi;
 
     public NetworkApiClient() {
+        // 配置Http请求信息日志
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient okHttpClient = new OkHttpClient()
@@ -34,6 +35,7 @@ public class NetworkApiClient {
                 .disableHtmlEscaping()
                 .create();
 
+        // 生成Retrofit对象将ApiService解析
         Retrofit retrofit = new Retrofit.Builder()
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create(gson))

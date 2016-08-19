@@ -50,7 +50,7 @@
  
  > ui 因为这个app没有我自定义的ui所以暂时没有放上去
 
-## MVP架构搭建
+## MVP架构搭建核心
 > BaseMvpActivity.java
 
 ![](http://o6kv2wscf.bkt.clouddn.com/16-8-19/49528159.jpg)

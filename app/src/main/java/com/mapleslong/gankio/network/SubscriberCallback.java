@@ -11,7 +11,7 @@ import rx.Subscriber;
 /**
  * Created by Mapleslong on 16/6/17.
  */
-// TODO: 16/8/19 这个回调可以才抽出业务逻辑处理,由于本app不需要太多逻辑所以不再抽出
+// TODO: 16/8/19 这个回调还可以根据业务再次抽出处理,由于本app不需要太多逻辑所以不再实现
 public class SubscriberCallback<T> extends Subscriber<T> {
     private ApiCallback<T> apiCallback;
 
